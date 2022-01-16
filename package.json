@@ -47,6 +47,9 @@
     "lint-staged": "^12.1.7",
     "prettier": "^2.5.1"
   },
+  "hooks":{
+    "pre-commit":"lint-staged"
+  },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
     "*.{js,jsx,css,md,scss}": "prettier --write"
