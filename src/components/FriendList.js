@@ -17,5 +17,6 @@ export default function FriendList(props) {
   );
 }
 FriendList.propTypes = {
-  friends: PropTypes.string.isRequired,
+  // id: PropTypes.number.isRequired,
+  friends: PropTypes.array.isRequired,
 };
