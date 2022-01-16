@@ -18,7 +18,7 @@ export default function App() {
         stats={user.stats}
       />
 
-      <ul class="friend-list">
+      <ul className="friend-list">
         {friends.map((friend) => (
           <FriendListItem key={friend.id} />
         ))}
