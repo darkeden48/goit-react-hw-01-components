@@ -1,15 +1,6 @@
-import FriendListItem from "./components/FriendListItem";
-// import friends from './friends.json';
-// export default function FriendList(props) {
-//   const {friends} = props;
-//   console.log(friends)
-//   return (
-// <ul class="friend-list">
-// {friends.map(friend=>(<friends/>
-// ))};
-// </ul>
-// );
-// }
+import PropTypes from "prop-types";
+import FriendListItem from "./FriendListItem";
+
 export default function FriendList(props) {
   const { friends } = props;
   return (
@@ -25,3 +16,6 @@ export default function FriendList(props) {
     </ul>
   );
 }
+FriendList.propTypes = {
+  friends: PropTypes.string.isRequired,
+};
