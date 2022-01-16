@@ -3,13 +3,13 @@ import data from "./data.json";
 import friends from "./friends.json";
 import Profile from "./components/Profile";
 import Statistics from "./components/Statistics";
-import FriendListItem from "./components/FriendListItem";
+// import FriendListItem from "./components/FriendListItem";
+import FriendList from "./components/FriendList";
 
 export default function App() {
   return (
     <div>
       <Statistics title="Upload stats" stats={data} />
-
       <Profile
         username={user.username}
         tag={user.tag}
@@ -17,12 +17,7 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
-      <ul className="friend-list">
-        {friends.map((friend) => (
-          <FriendListItem key={friend.id} />
-        ))}
-      </ul>
+      <FriendList friends={friends} />,
     </div>
   );
 }
