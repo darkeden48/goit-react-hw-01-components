@@ -1,25 +1,22 @@
 import PropTypes from "prop-types";
-import "./Statistics.css";
+import s from "./Statistics.module.css";
+
 export default function Statistics(props) {
   const { title = "Upload stats", stats } = props;
   return (
-    <section className="statistics">
+    <section className={s.statistics}>
       {title.length > 0 && <h2 className="title">Upload stats</h2>}
-      <ul className="stat-list">
+      <ul className={s.stat_list}>
         {stats.map((stat) => (
-          <li className="item" key={stat.id}>
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}</span>
+          <li className={s.item} key={stat.id}>
+            <span className={s.label}>{stat.label}</span>
+            <span className="percentage">{stat.percentage}%</span>
           </li>
         ))}
       </ul>
     </section>
   );
 }
-// Statistics.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   stats: PropTypes.string.isRequired
-//   };
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,

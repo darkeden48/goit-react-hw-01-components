@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  width: 150px;
+  list-style: none;
+  border: 1px solid;
+  border-radius: 10%;
+  margin-bottom: 5px;
+  background-color: antiquewhite;
+}
+.status {
+  display: block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}

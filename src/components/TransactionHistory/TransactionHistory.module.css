@@ -1,0 +1,15 @@
+.transaction-history {
+  margin-left: auto;
+  margin-right: auto;
+}
+th {
+  border: 1px burlywood;
+  width: 300px;
+}
+td {
+  border: 1px burlywood solid;
+  width: 300px;
+}
+thead {
+  background-color: aqua;
+}
